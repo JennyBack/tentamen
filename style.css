@@ -106,7 +106,32 @@ nav a:hover {
   margin-top: 30px;
   margin-bottom: 30px;
 }
+/* INDEX STYLING END*/
 
+/*LIST PAGE STYLING START*/
+.movieList {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+}
+
+.medlemmar h1 {
+  font-weight: 200;
+  text-align: center;
+}
+
+.medlemmar li {
+  margin: auto;
+  padding: 20px;
+  border: solid grey;
+}
+
+.medlemmar ol {
+  list-style-type: upper-roman;
+  color: darkblue;
+}
 /*"FUN" PAGE ANIMATION, TRANSITION, HOVERLIST STYLING START*/
 .animation div {
   height: 200px;
@@ -151,7 +176,13 @@ nav a:hover {
   display: none;
 }
 .visibleList:hover {
+  cursor: pointer;
+  font-size: 24px;
+}
+.visibleList:hover ol {
   display: block;
+  background-color: white;
+  cursor: pointer;
 }
 
 /*RESPONIVE DESIGN FOR DESKTOP USERS*/
