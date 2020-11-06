@@ -139,6 +139,7 @@ nav a:hover {
   background-color: yellow;
   animation-name: MyAnimation;
   animation-duration: 5s;
+  animation-iteration-count: infinite;
 }
 @keyframes MyAnimation {
   0% {
@@ -170,6 +171,8 @@ nav a:hover {
 }
 .transition div:hover {
   width: 400px;
+  transition: width 3s;
+  transition-timing-function: ease-out;
   background-color: violet;
 }
 .hiddenList {
