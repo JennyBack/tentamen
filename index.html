@@ -5,29 +5,50 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="keywords" content="HTML, CSS" />
     <meta name="author" content="Jenny Bäcklin" />
+    <!--CDN FONTAWESOME FOR THE BURGER ICON-->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
+      integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp"
+      crossorigin="anonymous"
+    />
+
     <link rel="stylesheet" href="style.css" />
     <title>Tentamen</title>
   </head>
   <!--STARTSIDAN SOM INNEHÅLLER EN MAIN SECTION MED INTRO TEXT OCH FORMULÄR-->
   <body>
     <header>
-      <nav>
-        <ul>
-          <li>
-            <a href="index.html">Home</a>
-          </li>
-          <li>
-            <a href="listor.html">Filmer</a>
-          </li>
-          <li>
-            <a href="grafiskt.html">Grafiskt</a>
-          </li>
-        </ul>
-      </nav>
-    </header>
+        <img
+          src="interface/night_moon_icon-icons.com_62486.png"
+          alt=""
+          class="logo"
+        />
+        <!--HAMBURGER-->
+        <input class="toggler" type="checkbox" name="" id="toggler" />
+  
+        <label for="toggler" class="burger">
+          <span><i class="fas fa-bars"></i></span>
+        </label>
+        <!--Navigation with links-->
+        <nav>
+          <ul>
+            <li>
+              <a href="index.html">Hem</a>
+            </li>
+            <li>
+              <a href="listor.html">Favoriter</a>
+            </li>
+            <li>
+              <a href="grafiskt.html">Fun</a>
+            </li>
+            
+          </ul>
+        </nav>
+      </header>
     <main>
-      <section class="introduction">
-        <div>
+      <section class="introText">
+        <div class="introText" >
           <h1>Hello</h1>
           <p>
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Beatae
@@ -36,7 +57,7 @@
           </p>
         </div>
       </section>
-      <section class="introductionForm">
+      <section class="introForm">
         <form action="get">
             <fieldset>
               <div>
