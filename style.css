@@ -96,6 +96,53 @@ nav a:hover {
   justify-content: center;
 }
 
+/*"FUN" PAGE ANIMATION, TRANSITION, HOVERLIST STYLING START*/
+.animation div {
+  height: 200px;
+  width: 200px;
+  background-color: yellow;
+  animation-name: MyAnimation;
+  animation-duration: 5s;
+}
+@keyframes MyAnimation {
+  0% {
+    background-color: red;
+  }
+  25% {
+    background-color: yellow;
+  }
+  50% {
+    background-color: blue;
+  }
+  100% {
+    background-color: green;
+  }
+  from {
+    height: 200px;
+    width: 200px;
+  }
+  to {
+    height: 200px;
+    width: 600px;
+  }
+}
+
+.transition div {
+  height: 200px;
+  width: 200px;
+  background-color: yellow;
+}
+.transition div:hover {
+  width: 400px;
+  background-color: violet;
+}
+.hiddenList {
+  display: none;
+}
+.visibleList:hover {
+  display: block;
+}
+
 /*RESPONIVE DESIGN FOR DESKTOP USERS*/
 @media screen and (min-width: 800px) {
   .burger {
@@ -119,5 +166,9 @@ nav a:hover {
 
   nav a {
     color: rgba(172, 215, 255, 0.774);
+  }
+  .introText {
+    flex-direction: row;
+    align-content: center;
   }
 }

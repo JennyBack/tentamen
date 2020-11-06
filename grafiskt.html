@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="keywords" content="HTML, CSS" />
+    <meta name="author" content="Jenny Bäcklin" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Tentamen</title>
+  </head>
+  <!--SIDAN INNEHÅLLER EN LISTA OCH EN NESTAD LISTA-->
+  <body>
+    <header>
+      <img
+        src="interface/night_moon_icon-icons.com_62486.png"
+        alt=""
+        class="logo"
+      />
+      <!--HAMBURGER-->
+      <input class="toggler" type="checkbox" name="" id="toggler" />
+
+      <label for="toggler" class="burger">
+        <span><i class="fas fa-bars"></i></span>
+      </label>
+      <!--Navigation with links-->
+      <nav>
+        <ul>
+          <li>
+            <a href="index.html">Hem</a>
+          </li>
+          <li>
+            <a href="listor.html">Favoriter</a>
+          </li>
+          <li>
+            <a href="grafiskt.html">Fun</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="animation">
+        <h1>Animation</h1>
+        <div></div>
+      </section>
+      <section class="hoverList">
+        <h1>Hover List</h1>
+        <ul>
+          <li class="visibleList">
+            Tröja
+            <ol class="hiddenList">
+              <li>Röd</li>
+              <li>Blå</li>
+              <li>Gul</li>
+            </ol>
+          </li>
+          <li class="visibleList">
+            Tröja
+            <ol class="hiddenList">
+              <li>Röd</li>
+              <li>Blå</li>
+              <li>Gul</li>
+            </ol>
+          </li>
+        </ul>
+      </section>
+      <section class="transition">
+        <h1>Transition</h1>
+        <div></div>
+      </section>
+      <section class="image">
+        <h1>Bild</h1>
+        <img
+          src="img/pexels-pixabay-167843.jpg"
+          alt="A picture of the night sky"
+          style="max-width: 100%; height: auto"
+        />
+      </section>
+    </main>
+  </body>
+</html>
